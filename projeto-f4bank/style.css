@@ -38,6 +38,26 @@ align-items: center;
 
  main{
     background-color: #e6d7c2;
+    
+
+}
+main div {
+    margin-left: 20px;
+
+}
+
+main ol li {
+    color: rgb(17, 16, 16);
+    font-size: 20px;
+   text-align:justify;
+   font-family: roboto, arial, helvetica;
+   list-style: none;
+}
+
+main span {
+    font-size:20px;
+   
+
 }
  .icones img {
     height: 25px;
