@@ -7,43 +7,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F4Bank</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div>
-            <img src='img/f4bank.png' />
+        <div class="container">
+            <div>
+                <img src='img/f4bank.png' />
+            </div>
+            <nav>
+                <a href="#top"> Home </a>
+                <a href="#quem-somos">Quem Somos</a>
+                <a href="#produtos"> Nossos Produtos </a>
+                <a href="#contato">Contato</a>
+                <a href="work.html"> Trabalhe Conosco</a>
+            </nav>
         </div>
-        <nav>
-            <a href="#top"> Home </a>
-            <a href="#quem-somos">Quem Somos</a>
-            <a href="#produtos"> Nossos Produtos </a>
-            <a href="#contato">Contato</a>
-            <a href="work.html"> Trabalhe Conosco</a>
-        </nav>
     </header>
 
     <main>
+        <div class="container">
+            <div id="chamada">
+                <img src="./img/senhora-negra.jpeg" />
+                <h1>F4Bank <br> Simplicidade <br> Conforto <br> Segurança </h1>
+
+            </div>
+
+
+        </div>
         <div>
-            <h2 id="quem-somos">Quem somos</h2>
-            <h2 id="produtos"> Nossos produtos </h2>
-            <ol>
-                <!-- -->
-                <li> Praticidade e simplicidade ao acessar </li>
-                <li>Segurança em primeiro lugar </li>
-                <li>Banco focado na vida financeira da terceira idade</li>
-                <li>Gestão da aposentaria</li>
-                <li>Saúde financeira</li>
-                <li>Planejamento financeiro para o seu corforto</li>
-                <li>Atendimento tefefônico personalizado</li>
-            </ol>
+
+            <div id="cartao-sobre">
+                <div>
+                    <h2 id="quem-somos">Quem somos</h2>
+                    <h2 id="produtos"> Nossos produtos </h2>
+                    <ol>   <!-- -->
+                        <li> Praticidade e simplicidade ao acessar </li>
+                        <li>Segurança em primeiro lugar </li>
+                        <li>Banco focado na vida financeira da terceira idade</li>
+                        <li>Gestão da aposentaria</li>
+                        <li>Saúde financeira</li>
+                        <li>Planejamento financeiro para o seu corforto</li>
+                        <li>Atendimento tefefônico personalizado</li>
+                    </ol>
+                </div>
+                <div>
+                    <img src="./img/cartão.jpeg" alt="">
+                </div>
+
+            </div>
+        </div>
+
+
+        <div id="contate-nos">
             <h2 id="contato"> Contato </h2>
-            <span>Entre em conosco</span>
-            <input type="email">
+            <form action="">
+                <span>Entre em contato conosco</span>
+                <input type="email">
+                <button>Enviar</button>
+            </form>
         </div>
     </main>
 
-    <footer>
+    <!-- <footer>
         <h3> O Banco da melhor idade. </h3>
         <div class="icones">
             <a href="https://twitter.com/" target="_blank"><i class="fab fa-linkedin"></i> <img
@@ -53,7 +82,7 @@
             <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i><img
                     src="img/instagram.png"></a>
         </div>
-    </footer>
+    </footer> -->
 </body>
 
 </html>
