@@ -1,16 +1,46 @@
 * {
-	padding: 0;
-	margin: 0;
-	text-decoration: none;
-	list-style: none;
-	box-sizing: border-box;
+
+    margin: 0;
+     padding: 0;
+     font-family: arvo;
+     box-sizing: border-box;
+     text-decoration: none;
+ }
+
+/* header{
+    display: flex;
+    grid-column: 1/3;
+    grid-row: 1;
+    justify-content:safe;
+    background-color: #f1ca63;
+    height: 20vh;
+    width: 100vw;
+    color:white;
+    align-items: center;
+
+} */
+
+header {
+    height:20vh;
+    width: 100vw;
+    background-color: #f1ca63;
+}
+header .container {
+    width:95%;
+    height:100%;
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content:center;
+    align-items:center;
+    margin: 0 auto;
 }
 
 body {
 	font-family: montserrat;
 }
 
-/* estilização do menu*/
+
+
 nav {
 	background: #f1ca63;
 	height: 15vh;
@@ -56,7 +86,6 @@ a.active, a:hover {
 	display: none;
 }
 
-/*responsividade menu*/
 @media (max-width: 952px){
 	label.logo{
 		font-size: 30px;
@@ -97,7 +126,101 @@ a.active, a:hover {
 		left: 0;
 	}
 }
-/*não fiz alteração*/
+
+header nav a:after{
+    content: "";
+    position:absolute;
+    background-color:#FC984D;
+    height:3px;
+    width:0;
+    left: 0;
+    bottom:-10px;
+    transition: 0.3s all
+}
+
+header nav a:hover::after{
+    width: 100%;
+}
+header nav a {
+    color:white;
+    font-family: roboto;
+    position: relative;
+    padding-left:20px;
+    font-size:20px; 
+    
+ }
+
+ main div .container{
+    width:105%;
+    height:100%;
+    margin:0 auto;
+
+ }
+
+ main .container #chamada{
+    background-color: #e6d7c2;
+     color: #FC984D;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     justify-content: center;
+     align-items: center;
+     width:100%;
+     
+ }
+ #cartao-sobre{
+     display:grid;
+     grid-template-columns: 60% 40%;
+
+ }
+ #cartao-sobre div img{
+     transform:rotate(90deg);  
+ }
+
+
+main{
+
+    font-family: roboto, arial, helvetica;
+    background-repeat:no-repeat;
+    background-size: 100%;
+    height: 90vh;
+    
+
+}
+
+main .container #chamada h1{
+    font-family: 'Roboto', sans-serif;
+    font-size:50px;
+    margin-left: 30px;
+}
+
+
+main ol li {
+    color: rgb(17, 16, 16);
+    font-size: 20px;
+   text-align:justify;
+   list-style: none;
+   
+}
+
+main span {
+    font-size:20px;
+   
+
+}
+
+ .icones img {
+    height: 25px;
+    width: 25px;
+   }
+
+ 
+
+
+h2 {
+    color:#3e5426 ;
+
+}
+/* 
 footer{
     background-color: #3e5426;
     display:flex;
@@ -107,6 +230,7 @@ footer{
     width: 100vw;
     text-align: center;
     align-items: center;
+
      }
     
      main{
@@ -125,3 +249,6 @@ footer{
         color:#3e5426 ;
     }
     
+
+     } */
+
