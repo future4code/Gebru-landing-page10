@@ -1,53 +1,127 @@
 * {
-    margin: 0;
-     padding: 0;
-     font-family: arvo;
-     box-sizing: border-box;
-     text-decoration: none;
- }
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
 
-header{
-    display: flex;
-    grid-column: 1/3;
-    grid-row: 1;
-    justify-content:safe;
-    background-color: #f1ca63;
-    height: 20vh;
+body {
+	font-family: montserrat;
+}
+
+/* estilização do menu*/
+nav {
+	background: #f1ca63;
+	height: 15vh;
+	width: 100%;
+}
+label.logo img {
+	line-height: 800px;
+	padding:  30px;
+	font-weight: bold;
+    width: 9%;
+  
+}
+nav ul {
+	float: right;
+	margin-right: 20px;
+}
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a {
+	color: white;
+	font-size: 30px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+a.active, a:hover {
+	background: #3e5426;
+	transition: .3s;
+}
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check {
+	display: none;
+}
+
+/*responsividade menu*/
+@media (max-width: 952px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+@media (max-width: 858px){
+	.checkbtn {
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #f1ca63;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+
+	nav ul li a {
+		font-size: 20px;
+	}
+	a:hover, a.active {
+		background: none;
+		color: #a83305;
+	}
+	#check:checked ~ ul {
+		left: 0;
+	}
+}
+/*não fiz alteração*/
+footer{
+    background-color: #3e5426;
+    display:flex;
+    justify-content: center;
+    color: white;
+    height: 30vh;
     width: 100vw;
-    color:white;
+    text-align: center;
     align-items: center;
-}
-
-header img {
-height: 100px;
-width: 100px;
-margin-left: 10px;
-margin-top: 12px;
-}
-
- footer{
-background-color: #3e5426;
-display:flex;
-justify-content: center;
-color: white;
-height: 30vh;
-width: 100vw;
-text-align: center;
-align-items: center;
- }
-
- main{
-    background-color: #e6d7c2;
-}
- .icones img {
-    height: 25px;
-    width: 25px;
-   }
-
-nav a {
-    color:white;
-}
-
-h2 {
-    color:#3e5426 ;
-}
+     }
+    
+     main{
+        background-color: #e6d7c2;
+    }
+     .icones img {
+        height: 25px;
+        width: 25px;
+       }
+    
+    nav a {
+        color:white;
+    }
+    
+    h2 {
+        color:#3e5426 ;
+    }
+    
