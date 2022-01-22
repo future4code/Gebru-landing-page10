@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F4Bank</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>F4Bank</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <div>
-    <img src='img/f4bank.png'/>
-</div>
-    <nav>
-        <a href="index.html"> Home </a>
-        <a href="index.html">Quem somos</a>
-        <a href="index.html"> Nossos produtos </a>
-        <a href="index.html">Contato</a>
-        <a href="#trabalhe-conosco"> Trabalhe Conosco</a>
-        </nav>
-</header>
+    
+    <header>
+        <div class="container">
+            <div>
+                <img src='img/f4bank.png' />
+            </div>
+            <nav>
+                <a href= "index.html"> Home </a>
+                <a href="index.html">Quem Somos</a>
+                <a href="index.html"> Nossos Produtos </a>
+                <a href="index.html">Contato</a>
+                <a href="work.html"> Trabalhe Conosco</a>
+            </nav>
+        </div>
+    </header>
 
 <main>
+<p> TRABALHE CONOSCO </p>
+<h6>Você também quer fazer a diferença na vida das pessoas? <br>
+    Sua jornada começa aqui.</h6>
     <section>
         <div class="form-contact">
             <form>
@@ -37,19 +46,25 @@
                     <label for="msg">Mensagem:</label>
                     <textarea id="msg" required></textarea>
                 </div>
+            
+            <div>
+                <label> Currículo <input type="file" name="image[]" multiple="multiple"></label>
+            </div>
+
+            <div>
                 <input type="submit" id="submit" value="Enviar mensagem">
+            </div>
             </form>
         </div>
     </section>
+    <footer>
+        <h4> O Banco da melhor idade. </h4>
+        <div class="icones">    
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-linkedin"></i> <img src="img/twitter.png"></a>
+            <a href="https://facebook.com/"target="_blank"><i class="fab fa-facebook"> </i><img src='img/facebook.png'></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i><img src="img/instagram.png"></a>
+        </div>   
+    </footer>
 </main>
-
-<footer>
-    <h3> O Banco da melhor idade. </h3>
-    <div class="icones">    
-        <a href="https://twitter.com/" target="_blank"><i class="fab fa-linkedin"></i> <img src="img/twitter.png"></a>
-        <a href="https://facebook.com/"target="_blank"><i class="fab fa-facebook"> </i><img src='img/facebook.png'></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i><img src="img/instagram.png"></a>
-    </div>   
-</footer>
 </body>
 </html>

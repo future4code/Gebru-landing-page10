@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F4Bank</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
@@ -28,23 +28,46 @@
         </div>
     </header>
 
-    <main>
-        <div class="container">
-            <div id="chamada">
-                <img src="./img/senhora-negra.jpeg" />
-                <h1>F4Bank <br> Simplicidade <br> Conforto <br> Segurança </h1>
+    <main class="container-main">
+        <section>
+            <div class="secao1">
+                <div id="chamada">
+                    <img class="imagem1" src="./img/senhora-negra.jpeg">
 
+                    <h1>F4Bank <br> Simplicidade <br> Conforto <br> Segurança </h1>
+                </div>
+        </section>
+
+
+        <section class="secao2">
+            <div>
+                <h2 id="quem-somos">Quem somos</h2>
+                <h5>Somos uma empresa de tecnologia focada na terceira idade com espírito inovador que desenvolve
+                    soluções simples, seguras e digitais para sua vida financeira. <br>
+                    Acreditamos que nossos clientes são pessoas com histórias, família, sonhos, experiências,
+                    inseguranças e que precisam de praticidade e confiança na hora de movimentar suas finanças,
+                    alguns pedem ajuda a familiares ou até estranhos, estando vulneráveis a aproveitadores.
+                    Fique tranquilo, estamos aqui para lhe ajudar! <br>
+                    Queremos trazer tranquilidade e segurança de uma forma descomplicada, confiável, prática e fácil na
+                    hora movimentar e investir seu dinheiro, confiamos no seu potencial e prezamos sempre pelo seu
+                    bem-estar.
+                    Venha ser independente e fazer parte da nossa família. <br>
+                    <b>Vem ser F4bank!</b>
+                </h5>
             </div>
 
+            <div class="imagem2">
 
-        </div>
-        <div>
+                <img src="./img/casal-idosos.jpeg">
+            </div>
+        </section>
 
-            <div id="cartao-sobre">
-                <div>
-                    <h2 id="quem-somos">Quem somos</h2>
-                    <h2 id="produtos"> Nossos produtos </h2>
-                    <ol>   <!-- -->
+        <section>
+            <div class="secao3">
+                <h2 id="produtos"> Nossos produtos </h2>
+
+                <div class="lista1">
+                    <ul>
                         <li> Praticidade e simplicidade ao acessar </li>
                         <li>Segurança em primeiro lugar </li>
                         <li>Banco focado na vida financeira da terceira idade</li>
@@ -52,37 +75,59 @@
                         <li>Saúde financeira</li>
                         <li>Planejamento financeiro para o seu corforto</li>
                         <li>Atendimento tefefônico personalizado</li>
-                    </ol>
+                        <li>Cartão sem anuidade </li>
+                    </ul>
                 </div>
-                <div>
+        </section>
+
+        <section>
+            <div class="secao4">
+                <div class="imagem3">
                     <img src="./img/cartão.jpeg" alt="">
                 </div>
-
+                <div class="form1">
+                    <form action="">
+                        <span>Peça já o seu cartão</span>
+                        <input type="text" name="nome" placeholder="Nome"required>
+                        <input type="email" name="e-mail"placeholder="E-mail"required>
+                        <input type="text" name="telefone"placeholder="Telefone"required>
+                        <input type="texto" name="cpf"placeholder="CPF"required>
+                        <button>Enviar</button>
+                    </form>
+                </div>
             </div>
-        </div>
+        </section>
 
-
-        <div id="contate-nos">
-            <h2 id="contato"> Contato </h2>
+        <section class="secao5">
+        <div class="form-contact" id="contate-nos">
             <form action="">
                 <span>Entre em contato conosco</span>
-                <input type="email">
-                <button>Enviar</button>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" required/>
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" required />
+                </div>
+                <div>
+                    <label for="msg">Mensagem:</label>
+                    <textarea id="msg" required></textarea>
+                </div>
+                <div>
+                    <input type="submit" id="submit" value="Enviar mensagem">
+                </div>
             </form>
         </div>
+        </section>
+        <footer>
+            <h3> O Banco da melhor idade. </h3>
+            <div class="icones">    
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-linkedin"></i> <img src="img/twitter.png"></a>
+                <a href="https://facebook.com/"target="_blank"><i class="fab fa-facebook"> </i><img src='img/facebook.png'></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i><img src="img/instagram.png"></a>
+            </div>   
+        </footer>
     </main>
-
-    <!-- <footer>
-        <h3> O Banco da melhor idade. </h3>
-        <div class="icones">
-            <a href="https://twitter.com/" target="_blank"><i class="fab fa-linkedin"></i> <img
-                    src="img/twitter.png"></a>
-            <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"> </i><img
-                    src='img/facebook.png'></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i><img
-                    src="img/instagram.png"></a>
-        </div>
-    </footer> -->
 </body>
-
 </html>
