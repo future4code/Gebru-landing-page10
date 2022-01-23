@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,31 +9,43 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <div class="container">
             <div>
-                <img src='img/f4bank.png' />
+                <img src='img/f4bank.png'alt="Logotipo"/>
             </div>
+            <div>
             <nav>
                 <a href="#top"> Home </a>
                 <a href="#quem-somos">Quem Somos</a>
                 <a href="#produtos"> Nossos Produtos </a>
-                <a href="#contato">Contato</a>
+                <a href="#contate-nos">Contato</a>
                 <a href="work.html"> Trabalhe Conosco</a>
             </nav>
         </div>
     </header>
 
-    <main class="container-main">
         <section>
             <div class="secao1">
-                <div id="chamada">
+                <div>
                     <img class="imagem1" src="./img/senhora-negra.jpeg">
-
+                </div>
+                <div id="chamada">
                     <h1>F4Bank <br> Simplicidade <br> Conforto <br> Segurança </h1>
+                </div>
+                <div class="form1">
+                    <form action="">
+                        <h3>Abra sua conta <br> e peça seu cartão </h3>
+                        <input type="text" name="nome" placeholder="Nome"required>
+                        <input type="text" name="e-mail"placeholder="E-mail"required>
+                        <input type="text" name="telefone"placeholder="Telefone"required>
+                        <input type="text" name="cpf"placeholder="CPF"required>
+                        <input type="text" name="endereço"placeholder="Endereço"required>
+                        <input type = "submit" name="enviar" value= "Enviar">
+                    </form>
                 </div>
         </section>
 
@@ -40,22 +53,19 @@
         <section class="secao2">
             <div>
                 <h2 id="quem-somos">Quem somos</h2>
-                <h5>Somos uma empresa de tecnologia focada na terceira idade com espírito inovador que desenvolve
+                <h5>Somos um banco público focado na terceira idade, com espírito inovador, buscando através da tecnologia desenvolver
                     soluções simples, seguras e digitais para sua vida financeira. <br>
                     Acreditamos que nossos clientes são pessoas com histórias, família, sonhos, experiências,
-                    inseguranças e que precisam de praticidade e confiança na hora de movimentar suas finanças,
-                    alguns pedem ajuda a familiares ou até estranhos, estando vulneráveis a aproveitadores.
-                    Fique tranquilo, estamos aqui para lhe ajudar! <br>
+                    inseguranças e que precisam de praticidade e confiança na hora de movimentar suas finanças. <br>
+                    Alguns pedem ajuda a familiares ou até estranhos, estando vulneráveis a aproveitadores.<br>
                     Queremos trazer tranquilidade e segurança de uma forma descomplicada, confiável, prática e fácil na
-                    hora movimentar e investir seu dinheiro, confiamos no seu potencial e prezamos sempre pelo seu
-                    bem-estar.
-                    Venha ser independente e fazer parte da nossa família. <br>
+                    hora movimentar e investir seu dinheiro. <br>
+                    A segurança de um banco tradicional com décadas de história no país. <br>
                     <b>Vem ser F4bank!</b>
                 </h5>
             </div>
 
             <div class="imagem2">
-
                 <img src="./img/casal-idosos.jpeg">
             </div>
         </section>
@@ -63,69 +73,60 @@
         <section>
             <div class="secao3">
                 <h2 id="produtos"> Nossos produtos </h2>
-
-                <div class="lista1">
-                    <ul>
-                        <li> Praticidade e simplicidade ao acessar </li>
-                        <li>Segurança em primeiro lugar </li>
-                        <li>Banco focado na vida financeira da terceira idade</li>
-                        <li>Gestão da aposentaria</li>
-                        <li>Saúde financeira</li>
-                        <li>Planejamento financeiro para o seu corforto</li>
-                        <li>Atendimento tefefônico personalizado</li>
-                        <li>Cartão sem anuidade </li>
-                    </ul>
+                <div class="cards">
+                    <div class="card">
+                        <img src="img/seguranca.png">
+                        Garantia de segurança
+                    </div>
+                    <div class="card">
+                        <img src="img/dinheiro.png">
+                        Conta corrente digital
+                        
+                    </div>
+                    <div class="card">
+                        <img src="img/telefone.png">
+                        Atendimento personalizado
+                    </div>
+                    <div class="card">
+                        <img src="img/financas.png">
+                        Gestão da aposentaria
+                    </div>
+                    <div class="card">
+                        <img src="img/cartao.png">
+                        Cartão sem taxa e anuidade
+                    </div>
                 </div>
         </section>
 
         <section>
-            <div class="secao4">
+            <div class="secao4" id="contate-nos">
                 <div class="imagem3">
-                    <img src="./img/cartão.jpeg" alt="">
+               <img src="img/fotocartaomenor.png">
                 </div>
-                <div class="form1">
+                <div class="form-contact">
                     <form action="">
-                        <span>Peça já o seu cartão</span>
-                        <input type="text" name="nome" placeholder="Nome"required>
-                        <input type="email" name="e-mail"placeholder="E-mail"required>
-                        <input type="text" name="telefone"placeholder="Telefone"required>
-                        <input type="texto" name="cpf"placeholder="CPF"required>
-                        <button>Enviar</button>
+                        <h3> Entre em contato conosco</h3>
+                        <div>
+                            <input type="text" name="nome" placeholder="Nome"required>
+                            <input type="text" name="e-mail"placeholder="E-mail"required>
+                            <input type="text" name="mensagem"placeholder="Mensagem"required>
+                        </div>
+                        <div>
+                            <input type="submit" id="submit" value="Enviar mensagem">
+                        </div>
                     </form>
                 </div>
             </div>
         </section>
 
-        <section class="secao5">
-        <div class="form-contact" id="contate-nos">
-            <form action="">
-                <span>Entre em contato conosco</span>
-                <div>
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" required/>
-                </div>
-                <div>
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" required />
-                </div>
-                <div>
-                    <label for="msg">Mensagem:</label>
-                    <textarea id="msg" required></textarea>
-                </div>
-                <div>
-                    <input type="submit" id="submit" value="Enviar mensagem">
-                </div>
-            </form>
-        </div>
-        </section>
+
         <footer>
-            <h3> O Banco da melhor idade. </h3>
+            <span> O Banco da melhor idade. </span>
             <div class="icones">    
                 <a href="https://twitter.com/" target="_blank"><i class="fab fa-linkedin"></i> <img src="img/twitter.png"></a>
                 <a href="https://facebook.com/"target="_blank"><i class="fab fa-facebook"> </i><img src='img/facebook.png'></a>
                 <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i><img src="img/instagram.png"></a>
             </div>   
         </footer>
-    </main>
 </body>
 </html>

@@ -8,45 +8,41 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 <body>
-    
     <header>
-        <div class="container">
-            <div>
-                <img src='img/f4bank.png' />
-            </div>
-            <nav>
-                <a href= "index.html"> Home </a>
-                <a href="index.html">Quem Somos</a>
-                <a href="index.html"> Nossos Produtos </a>
-                <a href="index.html">Contato</a>
-                <a href="work.html"> Trabalhe Conosco</a>
-            </nav>
+        <div>
+            <img src='img/f4bank.png' />
         </div>
-    </header>
-
-<main>
-<p> TRABALHE CONOSCO </p>
-<h6>Você também quer fazer a diferença na vida das pessoas? <br>
-    Sua jornada começa aqui.</h6>
-    <section>
+        <div>
+        <nav>
+            <a href="index.html"> Home </a>
+            <a href="index.html">Quem Somos</a>
+            <a href="index.html"> Nossos Produtos </a>
+            <a href="index.html">Contato</a>
+            <a href="work.html"> Trabalhe Conosco</a>
+        </nav>
+    </div>
+</header>
+<main> 
+    <section class="work">
+        <div class=imagem4>
+            <img src="img/cita1.jpeg" alt="">
+        </div>
         <div class="form-contact">
+            <h6> TRABALHE CONOSCO <br>
+                Você também quer fazer a diferença <br> na vida das pessoas? <br>
+                Sua jornada começa aqui.</h6>
             <form>
                 <div>
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome" required/>
+                    <input type="text" name="nome" placeholder="Nome"required>
                 </div>
                 <div>
                     <label for="email">E-mail:</label>
-                    <input type="email" id="email" required />
+                    <input type="text" name="e-mail"placeholder="E-mail"required>
                 </div>
-                <div>
-                    <label for="msg">Mensagem:</label>
-                    <textarea id="msg" required></textarea>
-                </div>
-            
             <div>
                 <label> Currículo <input type="file" name="image[]" multiple="multiple"></label>
             </div>
